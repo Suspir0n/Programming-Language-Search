@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Site Metas -->
+        <title>SL - Search the language</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="Search the language what do you wish.">
+        <meta name="author" content="Evandro Silva">
+
+        <!-- Site Icons -->
+        <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" /> -->
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='_CSS/style.css') }}">
+    </head>
+    <boby>
+        <div id="verificador_edad">
+            <p>Welcome</p>
+            <div class="content">
+                <h4>What language do you wish search at your github ?</h4>
+                <form id='form' method="post" action="/searchLanguage" class="checkAgeForm">
+                    <div class="inputs">
+                        <ul>
+                            <li><input type="text" placeholder="Username" name="username" id="username" required="required"/></li>
+                            <li><input type='text' placeholder="language" name="language" id="language"required="required"/></li>
+                            <li><button id="sendMessageButton" type="submit">Search</button></li>   
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </boby>
+</html>
